@@ -45,3 +45,31 @@ console.log("Remainder:", 10 % 3);
 // Exponentiation **
 console.log("Exponentiation:", 3 ** 3);   // 3*3*3
 
+
+// Assignment Operators:
+// Assignment =
+let x = 20
+
+// let y = x + 2;
+// console.log(y);
+
+// Addition assignment +=
+//  x += 4;
+//  console.log(x);
+
+// Subtraction assignment -=
+// x -= 4;
+// console.log(x);
+
+// Multiplication assignment *=
+// x *= 4;
+// console.log(x);
+
+// Division assignment /=
+// x /= 4;
+// console.log(x);
+
+// Modulus assignment %=
+x %= 4;
+console.log(x);
+
