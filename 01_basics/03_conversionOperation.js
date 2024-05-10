@@ -22,3 +22,26 @@ console.log(numBolleane);
 // 1 => true, 0 => false
 // "" => false
 // "Nirdesh" => true
+
+
+// ************************** Operation **********************
+// Arithmetic Operators:
+
+// Addition +
+console.log("Addition:", 3 + 3);
+
+// Subtraction -
+console.log("Subtraction:", 3 - 3);
+
+// Multiplication *
+console.log("Multiplication:", 3 * 3);
+
+// Division /
+console.log("Division:", 3 / 3);
+
+// Modulus (Remainder) %
+console.log("Remainder:", 10 % 3);
+
+// Exponentiation **
+console.log("Exponentiation:", 3 ** 3);   // 3*3*3
+
