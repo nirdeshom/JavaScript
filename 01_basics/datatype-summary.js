@@ -42,3 +42,34 @@ let myFunction = function(){
 
 console.log(myFunction);
 console.log(typeof (myFunction));
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (Primitive),  Heap (Non Primitive)
+
+let myName = "Nirdesh Kumar";
+let changeName = myName;
+changeName = "Love Verma"
+
+console.log(myName);
+console.log(changeName);
+
+let userOne = {
+    email: "nir@gmail.com",
+    age: 21,
+}
+
+let userTwo = userOne;
+userTwo.email = "om@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+let myArr = ["Nirdesh", "Omjeet"]
+let changeArr = myArr;
+
+changeArr[0] = "Pooja";
+
+console.log(myArr);
+console.log(changeArr);
+
