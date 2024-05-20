@@ -70,7 +70,7 @@ one.two = function(){
 console.log(one.two());
 
 const course = {
-    coursename: "JavaScript",
+    fullcoursename: "JavaScript",
     price: 999,
     courseInstructor: "nirdesh",
 
@@ -80,6 +80,7 @@ const course = {
 
 // de-structuse object
 const {courseInstructor: Instructor} = course
+const {fullcoursename: coursename} = course
 
 console.log(Instructor);
-
+console.log(coursename);
