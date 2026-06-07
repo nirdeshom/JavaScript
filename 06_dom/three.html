@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai Aur Code</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement('div');  // Element create kya
+    div.className = "main"  // Element me class set kya
+    div.setAttribute("id", "parent chaild")  // id set kya
+    // div.innerText = "Chai Aur Code";  // text add kya
+    div.style.color = "red";  // css apply kya
+    
+    // text craete kya new method se
+    const addText = document.createTextNode("Hello ye method se text create hoga");
+    div.appendChild(addText)  // div me text add kya
+
+    document.body.appendChild(div)  // body me Element set kr diya 
+
+    console.log(div);
+</script>
+</html>
