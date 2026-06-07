@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');  // create
+        li.innerText = `${langName}`;  // text aa gya
+
+        // document.querySelector('.language').appendChild(li);
+
+        const sel = document.querySelector('.language');  // select kya yaha add krna
+        sel.appendChild(li)  // set kya
+    }
+
+    addLanguage("PHP");
+    addLanguage("TypeScript");
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');  // craete Element
+        li.appendChild(document.createTextNode(langName));  // add text
+        document.querySelector('.language').appendChild(li)  // select and add
+    }
+    addOptiLanguage("Go Lang");
+
+    // Edit 
+    const secoundLang = document.querySelector('li:nth-child(2)');  // selsect kya
+    // console.log(secoundLang);
+    // secoundLang.innerText = "Mojo"
+
+    const newLi = document.createElement('li');  // create kya
+    newLi.innerText = "MOJO";  // text add kya
+    secoundLang.replaceWith(newLi)  // replace kya
+
+    // Edit 
+    const firstLang = document.querySelector('li:first-child');
+    // firstLang.outerHTML = "<li>This is lenguage";
+
+    // Remove
+    const lastChild = document.querySelector('li:last-child')  // select kya
+    // lastChild.remove()  // remove
+
+    const otherRemove = document.querySelector('li:nth-child(2)')  // select kya
+    otherRemove.remove()  // remove
+</script>
+
+</html>
